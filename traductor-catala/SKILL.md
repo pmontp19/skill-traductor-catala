@@ -1,6 +1,6 @@
 ---
 name: traductor-catala
-license: Apache-2.0
+license: MIT
 description: >
   Guia completa per traduir programari al català seguint els estàndards de Softcatalà, la Guia d'estil, les normes ISO i els recursos terminològics. Activa sempre que l'usuari demani traduir cadenes de text, missatges d'interfície, fitxers PO/POT, o qualsevol contingut de programari al català. També activa quan l'usuari vulgui revisar traduccions existents, comprovar si una traducció segueix els estàndards, pregunti sobre terminologia tecnològica en català, o necessiti ajuda amb decisions de localització (formats de data, números, tecles, etc.). Si l'usuari esmenta "softcatala", "po files", "gettext", "localització", "l10n", "i18n" en context català, usa aquesta skill. No esperis que l'usuari ho demani explícitament — si estàs traduint qualsevol cosa al català, aplica sempre aquestes normes.
 ---
