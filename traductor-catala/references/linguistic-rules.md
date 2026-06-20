@@ -28,8 +28,10 @@ Vós: **"Esteu segur que voleu eliminar?"**, **"El document s'ha desat"**
 ## Gramàtica
 
 ### Ser vs. Estar
-- Usar **"ser"** per a localització i amb adjectius d'estat: "La base de dades **és** buida" (no "està")
-- "estar" és correcte per a estats temporals físics o processuals quan és inequívoc
+- Usar **«ser»** per a localització física no abstracta: «El fitxer X **és** a la carpeta Y» (no «està»), «La base de dades **és** al disc»
+- Davant d'adjectius, Softcatalà recomana **«ser»** (forma tradicional): «La base de dades **és** buida», «El disc **és** ple», «L'accés **és** restringit»
+- **Excepcions** on només és correcte «estar»: «El programa **està** baixat», «El document **està** desconfigurat», «El disc **està** malmès/danyat»
+- Davant de topònims: «ser» o «estar» admesos («Serà **a**/**en** València»)
 
 ### Negació doble
 Obligatoria amb partícules negatives:
@@ -51,8 +53,9 @@ Usar masculí (forma no marcada) per a grups mixts:
 Preferir formes genèriques: "tothom" (no "els desenvolupadors/les desenvolupadores"), "el personal", "la persona usuària"
 
 ### Preposicions
-- **"per"** = agent/causa: "creat per l'usuari", "fallit per una errada"
-- **"per a"** = propòsit/destinació: "eines per a programadors", "fitxer per al servidor"
+- **"per"** = agent/causa: "creat per l'usuari", "Programa traduït per Softcatalà", "S'ha cancel·lat per sobrecàrrega"
+- **"per a"** = propòsit/destinació: "eines per a programadors", "fitxer per al servidor", "Programa per a la compressió de fitxers"
+- Davant infinitiu pendent de fer: "Programa per baixar" (encara no s'ha baixat) vs "Programa per a baixar imatges" (finalitat)
 - **"a"** per a moviment/destí: "anar a la carpeta", "desar a l'escriptori"
 - **"en"** per a localització estàtica (abstracta): "en el menú", "en la llista"
 - Formes curtes preferides: "damunt" (no "al damunt de"), "sota" (no "per sota de")
@@ -95,7 +98,7 @@ Quan introdueixen una llista o explicació, van seguits de minúscula (en catal�
 ### Usar minúscula per a:
 - Noms de llengües: **català**, anglès, castellà
 - Dies de la setmana i mesos: dilluns, gener
-- Adjectius derivats de noms propis: "la interfície **gnòmica**"
+- Adjectius derivats de noms propis: "la interfície **del GNOME**" (no «gnòmica», que vol dir «de gnoms»)
 - Elements d'una llista que no comencen frase (quan la llista és precedida per dos punts i els elements s'integren en el text)
 
 ## Sigles i acrònims
@@ -147,5 +150,48 @@ Preferir veu activa. Convertir passives quan és possible:
 | Doncs (causal) | Ja que / Perquè |
 | En quant a | Quant a / Pel que fa a |
 | Tals com | Com ara |
-| estar a punt de | estar a punt de ✓ (és correcte!) |
 | sí/si confosos | sí (afirm.) / si (condicional) |
+| No s'emmagatzemen cap contrasenya | No s'emmagatzema cap contrasenya |
+| Universal el GitHub | Universal a GitHub |
+
+## Concordança amb «cap»
+
+Regla del català (DIEC): «cap» + nom singular → verb en singular:
+- ❌ «No s'emmagatzemen cap contrasenya» → ✅ «No s'emmagatzema cap contrasenya»
+- ❌ «No hi ha cap errors» → ✅ «No hi ha cap error»
+- Excepció: «cap dels/de les» + plural (verb en plural): «No n'hi ha cap dels dos que funcioni» / «No n'hi ha cap que funcionin»
+
+## Gerundis perifràstics a evitar
+
+El gerundi català descriu acció **en curs** real; evita les construccions calcades de l'anglès:
+
+| ❌ Anglicisme | ✅ Natural |
+|---------------|------------|
+| «S'està utilitzant l'alternativa» | «S'utilitza l'alternativa» (o «S'usa») |
+| «Anant a la configuració…» | «Aneu a la configuració…» |
+| «Va fent clic…» | «Feu clic…» |
+| «Continuant amb el procés…» | «Continueu el procés…» |
+
+El gerundi **sí** és vàlid per a acció simultània autèntica: «Mostra un indicador mentre s'està baixant» (acció realment en curs).
+
+## Distincions semàntiques freqüents
+
+| ❌ Confusió | ✅ Distinció |
+|------------|-------------|
+| enquesta / sondeig | **enquesta**: qüestionari estructurat (enquesta d'opinió, satisfacció); **sondeig**: enquesta ràpida/status poll, sounding-out |
+| magatzem / emmagatzematge | **magatzem**: lloc físic; **emmagatzematge**: concepte, acció (storage del programari) |
+| construir / crear / generar | **construeix**: build físic/compilació; **creat per X**: atribució d'autoria (`Built by X`); **genera**: output automàtic |
+| codificació / programació (d'IA) | **programació**: acció humana (`AI coding` = `programació amb IA`); **codificació**: transcodificació de dades (UTF-8) |
+| desar / guardar | **desar**: acció save (Softcatalà); **guardar**: castellanisme (evitar) |
+| resta / queda | **resten N crèdits** / **queden N crèdits**: ambdós vàlids, però consistent en tot el fitxer |
+
+## Redundàncies a evitar
+
+Patró freqüent: **substantiu + participi del mateix root** = redundància:
+
+| ❌ Redundant | ✅ Alternativa |
+|-------------|----------------|
+| Ús utilitzat | Ús consumit / Ús gastat |
+| Llista llistada | Llista mostrada / Llista |
+| Cerca cercada | Cerca realitzada / Cerca |
+| Resultats resultants | Resultats obtinguts |

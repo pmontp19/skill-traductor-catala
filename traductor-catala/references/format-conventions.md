@@ -68,7 +68,7 @@ Quan una llista barreja frases completes i fragments, estandarditza-la a un sol 
 - Espai entre número i unitat: **10 MB**, **3,5 GB**, **100 Mbps**
 - Símbols sense punt ni plural: kB, MB, GB, TB (no "MBs", no "MB.")
 - Unitats del sistema internacional: metres, quilòmetres (no milles)
-- Velocitat de transmissió: Mbps, Gbps (no MB/s per a velocitat de xarxa)
+- Velocitat de xarxa: Mbps, Gbps (bits per segon). Per a bytes per segon, usar MB/s, GB/s. Són unitats diferents, no intercanviables (1 byte = 8 bits).
 
 ### Abreviatures de mides de fitxer
 | Símbol | Valor |
@@ -117,9 +117,10 @@ Format: **Ctrl+S**, **Alt+F4**, **Ctrl+Maj+P**
 - Si una tecla és una lletra, en majúscula: **Ctrl+A**
 
 ### Seqüències de menú
-Usar `>` o `→` per a camins de menú:
+Usar `>` (consola/teclat) o `→` (GUI) de manera consistent dins del mateix document:
 - Fitxer > Desa com a...
-- Edita → Preferències → Avançat
+- Edita > Preferències > Avançat
+- O bé (GUI): Fitxer → Desa com a…, Edita → Preferències → Avançat
 
 ## Puntuació en elements UI
 

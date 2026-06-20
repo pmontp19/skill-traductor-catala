@@ -9,32 +9,34 @@ Quan s'estableix un terme per a un projecte, **documenta'l** i consulta les trad
 ## Fonts de consulta per ordre de prioritat
 
 ### 1. Glossari de Softcatalà (primera consulta)
-- **HTML navegable**: https://static.softcatala.org/terminology/sc-glossary/
+- **HTML navegable**: https://static.softcatala.org/terminology/sc-glossary.html
 - **CSV descarregable**: https://static.softcatala.org/terminology/sc-glossary.csv
 - Extret automàticament de les traduccions de Softcatalà
 - Cobreix terminologia de programari lliure i codi obert
 
 ### 2. Glossari complet de programari lliure
-- Cobreix tots els projectes amb memòries de traducció
-- Mateixa URL base, fitxer diferent (CSV disponible)
+- **HTML navegable**: https://static.softcatala.org/terminology/tots-glossary.html
+- **CSV descarregable**: https://static.softcatala.org/terminology/tots-glossary.csv
+- Cobreix tots els projectes amb memòries de traducció (no només Softcatalà)
 - Útil per a termes específics d'ecosistemes com GNOME, KDE, LibreOffice
 
 ### 3. TERMCAT — Centre de Terminologia
 - Web: https://www.termcat.cat/
-- **Cercaterm**: motor de cerca de terminologia catalana oficial
-- **Neoloteca** (2000–2010): neologismes tecnològics aprovats
+- **Cercaterm**: motor de cerca de terminologia catalana oficial (`/ca/cercaterm`)
+- **Neoloteca**: recull de neologismes tecnològics aprovats (`/ca/neoloteca`)
+- **Portals temàtics**: TIC (`http://tic.termcat.cat/ca`), economia, esports, dret, etc.
 - Font autoritzada per a termes nous o dubtosos
 - Si el terme hi és, usar la forma de TERMCAT tret que Softcatalà hagi establert una alternativa
 
 ### 4. Memòries de traducció de Softcatalà
 - Web: https://www.softcatala.org/recursos/memories/
-- 306 projectes, ~14,3 milions de paraules traduïdes
+- 304 projectes, ~14,5 milions de paraules traduïdes (juny 2026)
 - Formats disponibles: **PO** (Portable Object) i **TMX** (Translation Memory eXchange)
 - Útil per veure com s'ha traduït un terme en context real
 - Integrable a OmegaT, memoQ, Weblate, Poedit
 
 ### 5. Glossaris de Microsoft
-- Disponibles gratuïtament per a traducció de productes Microsoft
+- Disponibles gratuïtament a http://www.microsoft.com/Language/
 - Útil per a termes que Microsoft ha establert en català
 - Coherència amb l'ecosistema Windows
 
@@ -50,8 +52,8 @@ Cada projecte a https://www.softcatala.org/recursos/memories/ té:
 - Enllaç de descàrrega PO (`.po.zip` o carpeta `.tar.gz`)
 
 ### Col·leccions agregades
-- **Totes les memòries**: ~10,5 milions de paraules
-- **Només projectes Softcatalà**: ~2,78 milions de paraules (qualitat més controlada)
+- **Totes les memòries** (`tots-tm`): ~10,7 milions de paraules (10.655.094, juny 2026)
+- **Només projectes Softcatalà** (`softcatala-tm`): ~2,9 milions de paraules (2.877.770, qualitat més controlada)
 
 ### Ús amb eines de traducció
 - **OmegaT**: afegir fitxers TMX a la carpeta `tm/` del projecte
@@ -123,6 +125,41 @@ Per usar les memòries en un agent de traducció:
 | Sidebar | Barra lateral | |
 | Panel | Tauler | |
 
+### Termes d'ecosistema (verificats al glossari Softcatalà)
+| Anglès | Català | Nota |
+|--------|--------|------|
+| Cookie / Cookies | Galeta / Galetes | 100% ús al glossari |
+| Widget / Widgets | Giny / Ginys | 100% ús al glossari |
+| Legacy | Antic / Antiga | També "Giny tradicional" per a `legacy widget` |
+| Built-in | Integrat | Ex.: «funció integrada», «eina integrada» |
+| Storage | Emmagatzematge | NO «magatzem» (magatzem = lloc físic) |
+| Store (App Store) | Botiga | Apple Store → Botiga d'Apple |
+| Download (verb) | Baixa / Baixeu | Preferit al glossari (100% ús); «descarregar» també és vàlid (DIEC), però «baixar» és la forma recomanada |
+| Build (verb) | Construeix / Construïu | Però «Built by X» → «Creat per X» (atribució d'autoria en context web) |
+| Click (nom) | Clic | «Fer clic» com a verb; en macOS «Click OK» → «Premeu D'acord» |
+| Token | Testimoni | Veure nota «El cas `token`» a sota; decisió segons context i públic objectiu |
+| Keychain | Clauer | Pràctica universal en localització Apple/macOS (no apareix al glossari Softcatalà); «macOS Keychain» → «Clauer del macOS» |
+
+### El cas `token` (decisió segons context i públic)
+
+TERMCAT té **fitxes normalitzades a la Neoloteca** (TERMCAT, 2025) per a `token` segons context. La coherència dins del mateix producte és prioritària:
+
+| Context | Traducció TERMCAT | Aplicació pràctica |
+|---------|------------------|---------------------|
+| IA / aprenentatge automàtic (genèric) | **Segment** (n m) | Per a gran públic: usar «segment» |
+| NLP / LLM (`text token`, GPT token) | **Segment textual** (n m) | TERMCAT 2025; terme normalitzat |
+| Xarxes telecomunicacions (token ring) | **Testimoni** (n m) | Rarament apareix en UI moderna |
+| Criptomonedes | **Criptovalor** (n m) | Ex.: «initial coin offering» |
+| Autenticació (OAuth, API, session) | **Testimoni** (glossari Softcatalà) | Per a gran públic: usar «testimoni» |
+| Aplicacions per a desenvolupadors / eines tècniques | **Token** (manlleu) | L'usuari tècnic espera trobar «token»; usar «testimoni» o «segment» genera confusió |
+
+Fonts verificades (TERMCAT Cercaterm, juny 2026):
+- Definició de *segment*: «Unitat discreta de dades que representa una part significativa d'informació que pot ser processada i integrada amb altres segments en el context de sistemes intel·ligents basats en xarxes neuronals profundes.»
+- Definició de *segment textual*: «Unitat mínima resultant de la divisió automàtica d'un text en fragments més petits i manejables que és utilitzada com a entrada o unitat de processament en diferents models d'intel·ligència artificial.»
+- Nota TERMCAT: «Un segment textual pot ser un mot, un submot, un caràcter o un símbol especial, depenent del model d'intel·ligència artificial o de l'aplicació en què s'hagi d'utilitzar.»
+
+**Principi general**: en eines dirigides a desenvolupadors, el manlleu tècnic és sovint preferit quan la comunitat tècnica ja l'ha adoptat (ex.: `token`, `endpoint`, `callback`, `payload`, `deployment`). El criteri és quin terme usa el públic objectiu quan parla de la tecnologia en qüestió. Aquest principi **no** s'aplica a programari dirigit al gran públic, on s'ha de prioritzar sempre la forma catalana normalitzada per TERMCAT.
+
 ### Missatges del sistema
 | Anglès | Català recomanat |
 |--------|-----------------|
@@ -175,5 +212,5 @@ Per usar les memòries en un agent de traducció:
 ## Llista de correu de terminologia
 
 Per a dubtes terminològics i propostes de termes nous:
-- Llista de Softcatalà per a terminologia (consultar la web de Softcatalà per a l'adreça actual)
+- Llista pública de Softcatalà: https://llistes.softcatala.org/mailman/listinfo/terminologia
 - Aportar: el terme anglès, context d'ús, proposta de traducció amb raonament

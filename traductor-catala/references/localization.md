@@ -21,7 +21,9 @@ Usar `ca` genèric sempre que sigui possible per a màxima compatibilitat.
 - Exemple complet: **1.234.567,89**
 
 ### Percentatge
-Espai entre número i símbol: **75 %** (no "75%")
+**Sense espai** entre número i símbol (norma Softcatalà): **75%** (no «75 %»)
+- ❌ «10 % completat» → ✅ «10% completat»
+- Font: https://www.softcatala.org/guia-estil-de-softcatala/aspectes-de-localitzacio/ (secció «Percentatges»)
 
 ### Nombres ordinals
 Sense punt, amb la lletra final superíndex o adjunta:
@@ -77,20 +79,26 @@ Símbol **després** del número, espai entremig:
 - ❌ €1.234,50
 - ❌ 1.234,50€
 
-### Noms ISO de monedes (ISO 4217)
+### Noms ISO de monedes (ISO 4217-3)
 Usar noms estàndards del recurs de Softcatalà:
 - EUR → euro
 - USD → dòlar dels Estats Units
 - GBP → lliura esterlina
 - JPY → ien japonès
 
-Font: https://www.softcatala.org/estandard-iso-catala/ (secció ISO 4217)
+Font: https://www.softcatala.org/estandard-iso-catala/monedes/
 
 ## Números de telèfon
 
-Format espanyol amb grups de tres dígits separats per espai:
-- ✅ 971 123 456
-- ✅ +34 971 123 456
+Format dels territoris de parla catalana amb grups de tres dígits separats per espai:
+
+| Territori | Prefix | Exemple |
+|-----------|--------|---------|
+| Espanya | +34 | 971 123 456 / +34 971 123 456 |
+| Andorra | +376 | 123 456 / +376 123 456 |
+| França | +33 | 04 12 34 56 78 / +33 4 12 34 56 78 |
+| Itàlia | +39 | 06 1234 5678 / +39 06 1234 5678 |
+
 - ❌ (971) 123-456 (format americà)
 - ❌ 971-123-456
 
@@ -111,13 +119,13 @@ Sistema mètric decimal (SI):
 - Velocitat: km/h (no mph)
 
 Excepcions acceptades en programari:
-- Polzades (") per a mides de pantalla: "monitor de 27""
+- Polzades (″) per a mides de pantalla: monitor de 27″
 - Punts tipogràfics (pt) per a mides de font
 
 ## Noms de països i llengües
 
-### Noms de països (ISO 3166)
-Font autoritzada: https://www.softcatala.org/estandard-iso-catala/ (secció ISO 3166)
+### Noms de països (ISO 3166-3)
+Font autoritzada: https://www.softcatala.org/estandard-iso-catala/paisos/
 Exemples:
 - France → França
 - Germany → Alemanya
@@ -125,8 +133,8 @@ Exemples:
 - United Kingdom → Regne Unit
 - China → Xina
 
-### Noms de llengües (ISO 639)
-Font autoritzada: https://www.softcatala.org/estandard-iso-catala/ (secció ISO 639)
+### Noms de llengües (ISO 639-3)
+Font autoritzada: https://www.softcatala.org/estandard-iso-catala/llengues/
 - English → anglès
 - French → francès  
 - Spanish → castellà (o espanyol, depenent del context)
