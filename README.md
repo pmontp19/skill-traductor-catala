@@ -28,4 +28,4 @@ La skill aplica automàticament quan estàs traduint cadenes de programari al ca
 
 ## Llicència
 
-Apache 2.0
+MIT
